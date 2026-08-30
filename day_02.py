@@ -31,14 +31,17 @@ print(a % b)
 
 print("======= STUDENT INFORMATION =======")
 
-name = str(input("What is your name? "))
+name = input("What is your name? ")
 age = int(input("What is your age? "))
-course = str(input("What is your course? "))
+course = input("What is your course? ")
 cgpa = float(input("What is your cgpa? "))
+if 0 <= cgpa <= 5:
+    print("CGPA:" ,cgpa)
+else:
+    print("CGPA: Invalid")
 
 print("Name:" ,name)
 print("Age:" ,age)
 print("Course:" ,course)
-print("CGPA:" ,cgpa)
 
 print("===================================")

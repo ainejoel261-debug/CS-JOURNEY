@@ -7,6 +7,8 @@ def add(a, b):
 result = add(5, 3)
 print(result)
 
+#=====================================================================================================
+
 def greetings():
     name = input("Enter your name: ")
     print(f"Hello {name}, welcome to my CS journey!")

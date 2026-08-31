@@ -19,6 +19,7 @@ print(student["cgpa"])
 for key, value in student.items():
     print(key, ":", value)
 
+#=========================================================================================================
 
 names = ["Joel", "Kevin", "Rick", "Mark", "Dan"]
 print(names[0])

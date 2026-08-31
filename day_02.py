@@ -13,6 +13,8 @@ print(type(age))
 print(type(gpa))
 print(type(is_student))
 
+#====================================================================================================
+
 name_s = input("What is your name?")
 print("Hello " ,name_s)
 gpa = float(input("Enter your GPA: "))

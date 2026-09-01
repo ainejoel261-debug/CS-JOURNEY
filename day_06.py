@@ -38,7 +38,7 @@ while True:
             print("CGPA:" ,cgpa)
             break
     except ValueError:
-        print("CGPA: Invalid")
+        print("CGPA is either 0, 5 or between!")
 with open("students.txt", "a")as file:
     file.write(f"Name: {name}\n")
     file.write(f"Age: {age}\n")

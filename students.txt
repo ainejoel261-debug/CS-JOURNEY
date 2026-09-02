@@ -1,0 +1,15 @@
+Name: joel
+Age: 21
+Course: cs
+CGPA: 5.0
+--------------------
+Name: sozo
+Age: 21
+Course: civil
+CGPA: 4.0
+--------------------
+Name: edwin
+Age: 20
+Course: math
+CGPA: 3.4
+--------------------

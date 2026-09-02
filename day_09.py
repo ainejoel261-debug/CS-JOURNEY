@@ -48,8 +48,15 @@ for i in range(3):
             print("Enter the correct value CGPA!")
     student = Student(name, age, course, cgpa)                      #here your creating an object
     students.append(student)
+    with open("students.txt", "a")as file:
+        file.write(f"Name: {name}\n")
+        file.write(f"Age: {age}\n")
+        file.write(f"Course: {course}\n")
+        file.write(f"CGPA: {cgpa}\n")
+        file.write("--------------------\n")
 for student in students:
     student.display_info()
     print(student.calculate_grade())
+
 
 

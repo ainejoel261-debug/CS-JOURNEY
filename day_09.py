@@ -46,7 +46,7 @@ for i in range(3):
             break
         except ValueError:
             print("Enter the correct value CGPA!")
-    student = Student(name, age, course, cgpa)
+    student = Student(name, age, course, cgpa)                      #here your creating an object
     students.append(student)
 for student in students:
     student.display_info()

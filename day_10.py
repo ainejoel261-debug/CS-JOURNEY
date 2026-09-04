@@ -44,12 +44,15 @@ print(count)
 
 students = ["Joel", "Kevin", "Mary", "Aisha", "Daniel"]
 name = input("Enter your name: ")
+found = False
 for student in students:
     if name == student:
-        print("Name found!")
+        found = True
         break
-    else:
-        print("Name not found!")
+if found:
+    print("Student found")
+else:
+    print("Student not found")
 
 students = [
     {"name": "Joel", "cgpa": 4.1},
@@ -58,9 +61,32 @@ students = [
     {"name": "Aisha", "cgpa": 3.9},
     {"name": "Daniel", "cgpa": 4.3}
 ]
-cgpa = 0
+highest_cgpa = students[0]["cgpa"]
+highest_student = students[0]["name"]
+lowest_cgpa = students[0]["cgpa"]
+lowest_student = students[0]["name"]
+count = 0
+name = input("Enter student name: ")
+found = False
 for student in students:
-    for key, value in student.items():
-        if value > cgpa:
-            cgpa = value
-print(f"Highest CGPA: {key} - {cgpa}")
+    if student["cgpa"] > highest_cgpa:
+        highest_cgpa = student["cgpa"]
+        highest_student = student["name"]
+for student in students:
+    if student["cgpa"] < lowest_cgpa:
+        lowest_cgpa = student["cgpa"]
+        lowest_student = student["name"]
+for student in students:
+    if student["cgpa"] >= 4:
+        count += 1
+for student in students:
+    if student["name"] == name:
+        found = True
+        break
+if found:
+    print("Name found!")
+else:
+    print("Name not found!")
+print(f"Highest CGPA: {highest_student} - {highest_cgpa}")
+print(f"Lowest CGPA: {lowest_student} - {lowest_cgpa}")
+print(count)
